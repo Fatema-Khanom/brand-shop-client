@@ -1,10 +1,10 @@
-
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 w-full m-auto shadow-md rounded bg-red-500">
+            <div className="navbar w-full m-auto  rounded ">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabindex="0" className="btn btn-ghost lg:hidden">
@@ -40,23 +40,30 @@ const Navbar = () => {
                         to="/login"
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
-                        }
+                        } className="text-white"
                         >
                             Login
                         </NavLink></li>
-                    
+                    {/* <li><NavLink
+                        to="/contactus"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }
+                        >
+                            My cart
+                        </NavLink></li> */}
                     
                 </ul>
                 </div>
-                <img className='' src="https://ibb.co/7ggZ77J" alt="" />
+                <img className='h-10 ml-4' src="https://i.ibb.co/N1hb1TJ/logo-removebg-preview.png" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                 <li><NavLink
                         to="/"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }
+                            isPending ? "pending" : isActive ? "active" : "bg-red-500"
+                        }className="text-white font-semibold text-xl"
                         >
                          Home
                         </NavLink></li>
@@ -64,7 +71,7 @@ const Navbar = () => {
                         to="/addproduct"
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
-                        }
+                        }className="text-white font-semibold text-xl"
                         
                         >
                       Add Product
@@ -73,7 +80,7 @@ const Navbar = () => {
                         to="/mycart"
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "active" : ""
-                        }
+                        }className="text-white font-semibold text-xl"
                         >
                         My Cart
                         </NavLink></li>
@@ -85,13 +92,20 @@ const Navbar = () => {
                <li><NavLink
                         to="/login"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }
+                            isPending ? "pending" : isActive ? "active" : "bg-red-500"
+                        } className="text-white font-semibold text-xl"
                         >
                         Login
                         </NavLink></li>
                
-                
+                {/* <li><NavLink
+                        to="/register"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }
+                        >
+                        Register
+                        </NavLink></li> */}
                </ul>
                
                
