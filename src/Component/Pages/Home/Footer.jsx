@@ -3,7 +3,7 @@
 
         const Footer = () => {
             return (
-                <div className='w-full'>
+                <div className='  mt-10'>
                     <footer class="w-full  p-8 bg-black">
                     <div class="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg- text-center md:justify-between">
                         <img src="https://i.ibb.co/N1hb1TJ/logo-removebg-preview.png" alt="logo-ct" class="w-28" />
