@@ -1,0 +1,27 @@
+[
+    {
+      "brand": "Lamborghini",
+      "image": "https://i.ibb.co/Vqh5Njy/lamborghini.jpg"
+    },
+   
+    {
+      "brand": "Audi",
+      "image": "https://i.ibb.co/zPpsbV8/audi.png"
+    },
+    {
+      "brand": "Toyota",
+      "image": "https://i.ibb.co/dfKzwDD/toyota.jpg"
+    },
+    {
+      "brand": "Ford",
+      "image": "https://i.ibb.co/BtJ7Sjp/Ford.jpg"
+    },
+    {
+      "brand": "BMW",
+      "image": "https://i.ibb.co/mHZ5pTq/BMW.jpg"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "image": "https://i.ibb.co/bvPYtM8/Marcedes.jpg"
+    }
+  ]
