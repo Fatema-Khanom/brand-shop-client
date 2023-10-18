@@ -44,6 +44,15 @@ const Navbar = () => {
                         >
                             Login
                         </NavLink></li>
+                    <li><NavLink
+                        to="/signup"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        } className="text-white"
+                        >
+                            SignUp
+                        </NavLink></li>
+                        
                     
                 </ul>
                 </div>
@@ -88,6 +97,14 @@ const Navbar = () => {
                         } className="text-white font-semibold text-xl"
                         >
                         Login
+                        </NavLink></li>
+               <li><NavLink
+                        to="/signup"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : "bg-red-500"
+                        } className="text-white font-semibold text-xl"
+                        >
+                        SignUp
                         </NavLink></li>
                
                 
