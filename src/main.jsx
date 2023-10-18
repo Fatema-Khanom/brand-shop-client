@@ -9,6 +9,10 @@ import {
 import Root from './Root/Root.jsx';
 import Error from './Component/Pages/Error/Error.jsx';
 import Home from './Component/Pages/Home/Home.jsx';
+import Login from './Component/Pages/Login/Login.jsx';
+import AddProduct from './Component/Pages/AddProduct/AddProduct.jsx';
+import AddCart from './Component/Pages/MyCart/MyCart.jsx';
+import MyCart from './Component/Pages/MyCart/MyCart.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -17,8 +21,21 @@ const router = createBrowserRouter([
     children:[{
       path:"/",
       element:<Home></Home>,
-      
+      loader:()=> fetch("/data.json"),
     },
+    {
+      path:"/addproduct",
+      element:<AddProduct></AddProduct>
+    },
+    {
+      path:"/mycart",
+      element:<MyCart></MyCart>
+    },
+    
+    {
+      path:"/login",
+      element:<Login></Login>
+    }
     
   ]
   },

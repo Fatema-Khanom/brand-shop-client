@@ -44,14 +44,6 @@ const Navbar = () => {
                         >
                             Login
                         </NavLink></li>
-                    {/* <li><NavLink
-                        to="/contactus"
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }
-                        >
-                            My cart
-                        </NavLink></li> */}
                     
                 </ul>
                 </div>
@@ -98,14 +90,7 @@ const Navbar = () => {
                         Login
                         </NavLink></li>
                
-                {/* <li><NavLink
-                        to="/register"
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "active" : ""
-                        }
-                        >
-                        Register
-                        </NavLink></li> */}
+                
                </ul>
                
                
