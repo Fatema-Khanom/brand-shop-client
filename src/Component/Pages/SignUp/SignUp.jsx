@@ -291,6 +291,10 @@ const SignUp = () => {
               Sign Up
             </button>
           </div>
+           {/* <div className="flex items-center justify-center mt-2">
+                        <button onClick={handleGoogle} type="button" className="btn-primary">
+                            Google Login
+                        </button> */}
         </form>
       </div>
     </div>

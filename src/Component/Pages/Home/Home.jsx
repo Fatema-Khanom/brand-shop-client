@@ -2,8 +2,6 @@
 import { useLoaderData } from 'react-router-dom';
 import Bannar from './Bannar';
 import Category from './Category';
-import Footer from './Footer';
-import Navbar from './Navbar';
 import ContactUs from './ContactUs';
 
 const Home = () => {

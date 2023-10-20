@@ -15,11 +15,12 @@ import AddProduct from './Component/Pages/AddProduct/AddProduct.jsx';
 import MyCart from './Component/Pages/MyCart/MyCart.jsx';
 import SignUp from './Component/Pages/SignUp/SignUp.jsx';
 import AuthProvider from './Component/Provider/AuthProvider.jsx';
+import PrivateRoute from './Root/PrivateRoute.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement:<Error></Error>,
+    //errorElement:<Error></Error>,
     children:[{
       path:"/",
       element:<Home></Home>,
@@ -27,20 +28,20 @@ const router = createBrowserRouter([
     },
     {
       path:"/addproduct",
-      element:<AddProduct></AddProduct>
+      element:<PrivateRoute><AddProduct></AddProduct></PrivateRoute>,
     },
     {
       path:"/mycart",
-      element:<MyCart></MyCart>
+      element:<MyCart></MyCart>,
     },
     
     {
       path:"/login",
-      element:<Login></Login>
+      element:<Login></Login>,
     },
     {
       path:"/signup",
-      element:<SignUp></SignUp>
+      element:<SignUp></SignUp>,
     }
     
   ]

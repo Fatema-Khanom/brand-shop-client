@@ -86,6 +86,7 @@
 
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const { googleSignIn, signIn } = useContext(AuthContext);
@@ -93,10 +94,18 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log('location i n the login page', location)
+
+
     const handleGoogle = () => {
-        googleSignIn().then((result) => {
+        googleSignIn()
+        .then((result) => {
             console.log(result.user);
+            navigate(location?.state ? location.state : '/');
         });
+       
     };
 
     const handleLogin = () => {
@@ -105,6 +114,7 @@ const Login = () => {
                 .then((result) => {
                     console.log(result.user);
                     alert('Login successful')
+                    navigate(location?.state ? location.state : '/');
                 })
                 .catch((error) => {
                     setError(error.message); // Set the error message
@@ -158,8 +168,9 @@ const Login = () => {
                         </button>
                     </div>
                     <div className="flex items-center justify-center mt-2">
-                        <button onClick={handleGoogle} type="button" className="btn-primary">
-                            Google Login
+                        <h2 >Login with </h2>
+                        <button onClick={handleGoogle} type="button" className="text-blue-800 font-bold ml-2">
+                            Google
                         </button>
                     </div>
                     {error && (
