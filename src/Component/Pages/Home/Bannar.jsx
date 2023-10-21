@@ -1,26 +1,20 @@
 
-
 const Bannar = () => {
     return (
-       
-
-        <div>
-        {/* <div className="relative">
-        <img src="https://i.ibb.co/4SrJGfj/240-F-615699215-b-LR3bht-Z5w7ak-Rv-Grfq-Ta-Tf-Mt-ILKG0a-V.jpg" alt="Car Banner" className="w-full h-auto" />
-        <div className="absolute inset-0 flex flex-col md:-mt-60  justify-center text-white">
-            <h1 className=" pt-4 text-2xl md:text-6xl font-extrabold md:  text-center">Discover Excellence in Every Ride</h1>
-            <p className="  text-center px-8 md:pt-4">
-            At our car brand shop, we redefine the driving experience. Each vehicle in our collection is a masterpiece, designed with precision and passion. From cutting-edge technology to unparalleled comfort, we ensure excellence in every detail. Explore our range and embark on a journey where performance meets elegance.
-            </p>
+        <div className="w-11/12 m-auto my-10">
+            <div className="hero min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/ysytt0x/raphael-maksian-Qn7b-Jt56s-GY-unsplash.jpg)'}}>
+            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-content text-center text-neutral-content">
+                <div className="max-w-md">
+                <h1 className="mb-5 text-4xl font-bold text-white">Explore Our Exquisite Car Collection</h1>
+            
+                <p className="mb-5">Discover the latest models and experience luxury like never before. Explore our wide range of vehicles, each designed to elevate your driving experience.</p>
+                <button className="bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500">Explore Now</button>
+                </div>
+            </div>
+            </div>
         </div>
-        </div> */}
-        </div>
-
-
     );
 };
 
 export default Bannar;
-
-
-//https://i.ibb.co/Jj0GqSK/samuele-errico-piccarini-FMb-WFDi-VRPs-unsplash.jpg
