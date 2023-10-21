@@ -1,7 +1,7 @@
 
 const Bannar = () => {
     return (
-        <div className="w-11/12 m-auto my-10">
+        <div className="w-/12 m-auto my-10">
             <div className="hero min-h-screen" style={{backgroundImage: 'url(https://i.ibb.co/ysytt0x/raphael-maksian-Qn7b-Jt56s-GY-unsplash.jpg)'}}>
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
