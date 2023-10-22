@@ -7,7 +7,7 @@ import ContactUs from './ContactUs';
 const Home = () => {
     const category=useLoaderData()
     return (
-        <div>
+        <div className='dark:bg-black'>
             
             <Bannar></Bannar>
             <Category category={category}></Category>
