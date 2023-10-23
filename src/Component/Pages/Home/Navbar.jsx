@@ -7,7 +7,7 @@ import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
-const Navbar = () => {
+const Navbar = ({}) => {
     const [mode, setMode] = useState('light');
     const { user, logout } = useContext(AuthContext);
 
@@ -39,7 +39,7 @@ const Navbar = () => {
     };
 
     return (
-        <div>
+        <div className='dark:bg-black'> 
             <div className={`navbar w-full m-auto relative ${mode === 'dark' ? 'bg-white' : 'bg-red-700'} mb-10 rounded`}>
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -140,11 +140,12 @@ const Navbar = () => {
                         {user ? (
                             <div className="flex items-center -ml-20">
                                 <img
-                                    src={user.image}
+                                    src={user?.photo}
                                     alt={user.name}
                                     className="h-10 w-10 bg-black rounded-full"
                                 />
                                 <span className="ml-2">{user.email}</span>
+                                <span className="ml-2">{user?.name}</span>
                                 <button onClick={handleLogout} className="btn btn">
                                     Logout
                                 </button>

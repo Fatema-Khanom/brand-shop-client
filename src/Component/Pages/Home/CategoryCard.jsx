@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
 
 
 const CategoryCard = ({card}) => {
     const {brand,image}=card || {}
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl mt-10">
+           <Link to={`/brandproduct/${brand}`}>
+           <div  className="card w-96 bg-base-100 shadow-xl mt-10">
             <figure className=" h-64 px- pt-10">
                 <img src={image} alt="Shoes" className="rounded-xl" />
             </figure>
@@ -13,6 +15,7 @@ const CategoryCard = ({card}) => {
                 
                 </div>
             </div>
+           </Link>
             </div>
     
     );
