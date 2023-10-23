@@ -17,6 +17,8 @@ import SignUp from './Component/Pages/SignUp/SignUp.jsx';
 import AuthProvider from './Component/Provider/AuthProvider.jsx';
 import PrivateRoute from './Root/PrivateRoute.jsx';
 import BrandProducts from './Component/Pages/BrandProduct/BrandProducts.jsx';
+import Details from './Component/Pages/Details/Details.jsx';
+import Update from './Component/Pages/Update/Update.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,9 +48,21 @@ const router = createBrowserRouter([
     },
     {
       path: `/brandproduct/:brand`,
-      element: <BrandProducts></BrandProducts>,
+      element: <PrivateRoute><BrandProducts></BrandProducts></PrivateRoute>,
       loader: ({ brand }) => fetch(`http://localhost:5001/addproduct/${brand}`),
-    }
+    },
+    {
+      path: `/details`,
+      element:<Details></Details>,
+      loader: ({ _id }) => fetch(`http://localhost:5001/details/${_id}`),
+      
+    },
+    
+    {
+      path: `/update`,
+      element:<Update></Update>
+      
+    },
     
     
   ]

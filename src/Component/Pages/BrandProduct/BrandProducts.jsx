@@ -65,11 +65,13 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 import BrandCard from './BrandCard';
 import Slider from './Slider';
 
 const BrandProducts = () => {
+
+    // const brandProduct=useLoaderData()
   const { brand } = useParams();
   const [brandProducts, setBrandProducts] = useState([]);
 
@@ -85,12 +87,8 @@ const BrandProducts = () => {
   return (
     <div>
          <Slider></Slider>
-      <h1 className="text-4xl font-bold">{brand} Type Products</h1>
-      <div className="brand-card-container">
-        {brandProducts.map((product) => (
-          <BrandCard key={product.brand} brandData={product} />
-        ))}
-      </div>
+      <h1 className="text-4xl text-black font-bold mt-10">{brand}</h1>
+      <BrandCard brandProducts={brandProducts}></BrandCard>
      
     </div>
   );

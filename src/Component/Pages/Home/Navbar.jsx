@@ -96,7 +96,7 @@ const Navbar = ({}) => {
                         </ul>
                     </div>
                     <img
-                        className="h-10 ml-4"
+                        className="-ml-2 md:ml-2 h-6 md:h-10 ml-4"
                         src="https://i.ibb.co/N1hb1TJ/logo-removebg-preview.png"
                         alt=""
                     />
@@ -142,11 +142,11 @@ const Navbar = ({}) => {
                                 <img
                                     src={user?.photo}
                                     alt={user.name}
-                                    className="h-10 w-10 bg-black rounded-full"
+                                    className=" h-4 w-4 md:h-10 md:w-10 bg-black rounded-full"
                                 />
                                 <span className="ml-2">{user.email}</span>
                                 <span className="ml-2">{user?.name}</span>
-                                <button onClick={handleLogout} className="btn btn">
+                                <button onClick={handleLogout} className="bg-gray-700 px-2 py-1 rounded text-white">
                                     Logout
                                 </button>
                             </div>
