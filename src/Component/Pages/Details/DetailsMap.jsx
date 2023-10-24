@@ -2,12 +2,16 @@ import React from 'react';
 import DetailsCard from './DetailsCard';
 
 const DetailsMap = ({details}) => {
+    
+        if (!Array.isArray(details)) {
+          return null; 
+        }
      
     return (
         <div>
             <div className="">
-        {details?.map((details) => (
-          <DetailsCard key={details} details={details}/>
+        {details?.map((cards) => (
+          <DetailsCard key={cards} details={cards}/>
         ))}
       </div>
         </div>

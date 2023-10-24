@@ -4,17 +4,17 @@ import DetailsMap from './DetailsMap';
 
 const Details = () => {
     
-    const { _id } = useParams();
+    const { id } = useParams();
     const [details, setDetails] = useState([]);
   
     useEffect(() => {
       
-      fetch(`http://localhost:5001/details/${_id}`)
+      fetch(`http://localhost:5001/addproduct/brand/${id}`)
         .then((response) => response.json())
         .then((data) => {
-          setBrandProducts(data);
+          setDetails(data);
         });
-    }, [_id]);
+    }, [id]);
   
     return (
         <div>
