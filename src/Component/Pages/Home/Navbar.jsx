@@ -86,10 +86,20 @@ const Navbar = () => {
                                     My Cart
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink
+                                    to="/aboutus"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? 'pending' : isActive ? 'active' : ''
+                                    }
+                                >
+                                    About Us
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                     <img
-                        className="-ml-2 md:ml-2 h-6 md:h-10 ml-4"
+                        className="-ml-4 md:ml-2 h-6 md:h-10 ml-4"
                         src="https://i.ibb.co/N1hb1TJ/logo-removebg-preview.png"
                         alt=""
                     />
@@ -124,6 +134,16 @@ const Navbar = () => {
                                 }
                             >
                                 My Cart
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/aboutus"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? 'pending' : isActive ? 'active' : ''
+                                }
+                            >
+                                About Us
                             </NavLink>
                         </li>
                     </ul>

@@ -11,11 +11,11 @@ const Card = ({product}) => {
             </figure>
             <div className="card-body  w-full items-center text-center">
                 <h2 className="card-title  text-3xl  font-bold text- ">{name}</h2>
-                <div className="grid grid-cols-2 gap-2 md:gap-20">
+                <div className="  gap-2 ">
                 <p className="md:text-xl"><span className='text-black font-semibold '>Brand Name:</span> <span className='font-bold'>{brand}</span></p>
                 <p className="md:text-xl"><span className='text-black font-semibold '>Type:</span> <span className='font-bold'>{type}</span></p>
                 </div>
-                <div className="grid grid-cols-2 gap-2 md:gap-16">
+                <div className=" gap-2">
                 <p className=""><span className='text-black font-semibold '>Price:</span> <span className='font-bold'>{price}</span></p>
                 <p className=""><span className='text-black font-semibold '>Rating:</span> <span className='font-bold'>{rating}</span></p>
                 </div>

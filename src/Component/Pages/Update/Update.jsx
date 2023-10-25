@@ -20,7 +20,7 @@ const Update = () => {
     //     const updatedProduct = { name, brand, type, price, description, rating, photo };
     //     console.log(updatedProduct);
 
-    //     fetch(`http://localhost:5001/addproduct/id/${id}`, {
+    //     fetch(` https://brand-shop-server-m37mw4tua-fatema-khanoms-projects.vercel.app/addproduct/id/${id}`, {
     //         method: 'PUT',
     //         headers: {
     //             'content-type': 'application/json',

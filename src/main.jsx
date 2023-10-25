@@ -49,19 +49,19 @@ const router = createBrowserRouter([
     {
       path: `/brandproduct/:brand`,
       element: <BrandProducts></BrandProducts>,
-      loader: ({ brand }) => fetch(`http://localhost:5001/addproduct/${brand}`),
+      loader: ({ brand }) => fetch(` https://brand-shop-server-m37mw4tua-fatema-khanoms-projects.vercel.app/addproduct/${brand}`),
     },
     {
       path: "/details/:id",
       element:<PrivateRoute><Details></Details></PrivateRoute>,
-      //loader: ({params }) => fetch(`http://localhost:5001/addproduct/id/${params.id}`),
+      loader: ({params }) => fetch(` https://brand-shop-server-m37mw4tua-fatema-khanoms-projects.vercel.app/addproduct/id/${params.id}`),
       
     },
     
     {
       path: `/update`,
       element:<PrivateRoute><Update></Update></PrivateRoute>,
-      //loader:({params }) => fetch(`http://localhost:5001/addproduct/id/${params.id}`),
+     // loader:({id }) => fetch(` https://brand-shop-server-m37mw4tua-fatema-khanoms-projects.vercel.app/addproduct/id/${id}`),
       
       
     },

@@ -15,7 +15,7 @@ const AddProduct = () => {
         const addProduct = { name, brand, type, price, description, rating, photo };
         console.log(addProduct);
 
-        fetch('http://localhost:5001/addproduct', {
+        fetch(' https://brand-shop-server-m37mw4tua-fatema-khanoms-projects.vercel.app/addproduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -20,7 +20,7 @@ const Details = () => {
   // const [details, setDetails] = useState({});
 
   // useEffect(() => {
-  //   fetch(`http://localhost:5001/addproduct/id/${id}`)
+  //   fetch(` https://brand-shop-server-m37mw4tua-fatema-khanoms-projects.vercel.app/addproduct/id/${id}`)
   //     .then((response) => response.json())
   //     .then((data) => {
   //       setDetails(data);

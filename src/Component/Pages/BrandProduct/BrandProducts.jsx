@@ -14,7 +14,7 @@ const BrandProducts = () => {
 
   useEffect(() => {
     
-    fetch(`http://localhost:5001/addproduct/${brand}`)
+    fetch(`https://brand-shop-server-m37mw4tua-fatema-khanoms-projects.vercel.app/addproduct/${brand}`)
       .then((response) => response.json())
       .then((data) => {
         setBrandProducts(data);
