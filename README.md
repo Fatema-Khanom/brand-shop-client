@@ -1,8 +1,19 @@
-# React + Vite
+# Brand Shop Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+### User Authentication
+Secure your website by implementing user authentication. Users can create accounts, log in, and enjoy personalized experiences.
+    
+### Adding New Products
+Authorized users can add new car products. This feature includes a product input form, and the information is stored in a database for users to browse and purchase.
 
-Currently, two official plugins are available:
+### Brand-Wise Product Listing
+Organize your product catalog by brand, allowing users to filter products by manufacturer. Users can access brand-specific product listings.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Add to Cart
+Implement a shopping cart functionality. Users can add products to their cart, review items, and proceed to checkout.
+
+### Responsive Design
+Create a responsive web design for excellent user experiences across devices and screen sizes.
+
+## Websit live link:
