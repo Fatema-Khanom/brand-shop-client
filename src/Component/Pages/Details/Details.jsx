@@ -6,20 +6,30 @@ import DetailsCard from './DetailsCard';
 import DetailsMap from './DetailsMap';
 
 const Details = () => {
-  const { _id } = useParams();
-  const [details, setDetails] = useState({});
+  // const [seemore, setSeemore] = useState(null);
+  //const { id } = useParams(); 
+  // const seemoreData = useLoaderData(); 
 
-  useEffect(() => {
-    fetch(`http://localhost:5001/addproduct/id/${_id}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setDetails(data);
-      });
-  }, [_id]);
+  // useEffect(() => {
+    
+  //     const findDetails = seemoreData?.find(seeMore => seeMore.id === id); 
+  //     setSeemore(findDetails);
+  // }, [id, seemoreData]); 
+
+  // const { id } = useParams();
+  // const [details, setDetails] = useState({});
+
+  // useEffect(() => {
+  //   fetch(`http://localhost:5001/addproduct/id/${id}`)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setDetails(data);
+  //     });
+  // }, [id]);
 
   return (
     <div>
-      <DetailsMap details={details} />
+      {/* <DetailsMap details={details} /> */}
     </div>
   );
 };

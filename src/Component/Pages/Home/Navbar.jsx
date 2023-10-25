@@ -1,36 +1,13 @@
 
 
 
-import React, { useContext, useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
+import  { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 
-const Navbar = ({}) => {
-    //const [mode, setMode] = useState('light');
+const Navbar = () => {
+    
     const { user, logout } = useContext(AuthContext);
-
-    // function changeTheme() {
-    //     const html = document.documentElement;
-    //     if (mode === 'light') {
-    //         html.classList.remove('light');
-    //         html.classList.add('dark');
-    //         setMode('dark');
-    //         localStorage.setItem('mode', 'dark');
-    //     } else {
-    //         html.classList.remove('dark');
-    //         html.classList.add('light');
-    //         setMode('light');
-    //         localStorage.setItem('mode', 'light');
-    //     }
-    // }
-
-    // useEffect(() => {
-    //     const currentMode = localStorage.getItem('mode') || 'light';
-    //     document.documentElement.classList.add(currentMode);
-    //     setMode(currentMode);
-    // }, []);
 
     const [theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
     useEffect(()=>{
@@ -192,16 +169,6 @@ const Navbar = ({}) => {
                         )}
                     </div>
                 </div>
-                {/* <button onClick={changeTheme}>
-                    <FontAwesomeIcon
-                        icon={faCircleHalfStroke}
-                        style={{
-                            color: '#010813',
-                            width: '24px',
-                            height: '24px',
-                        }}
-                    />
-                    </button> */}
                    <div className="">
                         <label className="swap swap-rotate">
   

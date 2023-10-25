@@ -20,8 +20,8 @@ const Card = ({product}) => {
                 <p className=""><span className='text-black font-semibold '>Rating:</span> <span className='font-bold'>{rating}</span></p>
                 </div>
                 <div className="grid grid-cols-2 gap-12 mt-8 -mb-8 md:gap-48">
-               <Link to={"/details/:id"}> <button className="px-4 py-2 bg-red-800 text-white rounded">Details</button></Link>
-               <Link to={"/update"}> <button className="px-4 py-2 bg-red-800 text-white rounded">Update</button></Link>
+               <Link to={`/details/:id`}> <button className="px-4 py-2 bg-red-800 text-white rounded">Details</button></Link>
+               <Link to={`/update`}> <button className="px-4 py-2 bg-red-800 text-white rounded">Update</button></Link>
                 </div>
 
                 
